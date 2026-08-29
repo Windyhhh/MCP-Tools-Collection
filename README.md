@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🔧 MCP-Tools-Collection
+# MCP 工具集 | MCP-Tools-Collection
 
 ### A collection of MCP (Model Context Protocol) servers.
 
