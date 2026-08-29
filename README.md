@@ -53,6 +53,46 @@ MCP-Tools-Collection/
 
 ---
 
+## 技术实现细节
+
+### 架构概览
+
+项目采用模块化设计，核心目录包括：**agent-rules-main, mcp-feedback-enhanced-main**。
+
+### 核心类与模块
+
+- **WebUIManager**
+
+### 关键函数
+
+- `preload_i18n`, `init_encoding`, `is_wsl_environment`, `is_remote_environment`
+
+### 技术栈与依赖
+
+**核心框架/库**：FastAPI
+
+**主要 import**：
+```python
+import asyncio
+import concurrent.futures
+import os
+import threading
+import time
+import uuid
+from datetime import datetime
+from pathlib import Path
+from typing import Any
+import uvicorn
+```
+
+### 实现要点
+
+- 以 `WebUIManager` 为核心类，封装主要业务逻辑
+- 通过 `preload_i18n` 等函数实现核心流程编排
+- 基于 FastAPI 构建，技术栈成熟稳定
+- 代码结构清晰，模块间低耦合，便于扩展和维护
+
+---
 ## License
 
 MIT — free to use, modify and distribute.
